@@ -1,0 +1,38 @@
+.formsignup {
+  width: 366px;
+  height: 153px;
+  margin: 0px 12px 24px 12px;
+}
+
+.control {
+  height: 43px;
+  margin-bottom: 10px;
+}
+
+.control input {
+  width: 364px;
+  height: 42px;
+  padding: 0;
+  border: 1px solid #0085ff;
+}
+
+.actions button {
+  width: 366px;
+  height: 43px;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.75px;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  background-color: #aaaaaa;
+  color: white;
+  border: 1px solid #aaaaaa;
+}
+
+.actions button:hover,
+.actions button:active {
+  background-color: #0085ff;
+  border-color: #0085ff;
+}
