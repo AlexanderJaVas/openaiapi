@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import ChatList from './ChatList'
 import NewChatForm from './NewChatForm'
 import classes from './ChatPage.module.css'
+import URL from './backend_server_url'
 
 function ChatPage() {
   const [isLoading, setIsLoading] = useState(false)
@@ -20,7 +21,7 @@ function ChatPage() {
     setIsLoading(true)
     setTrigger(1)
     let session_username = sessionStorage.getItem('session_username')
-    fetch(`http://localhost:8080/chats/all/${session_username}`)
+    fetch(`${URL}/chats/all/${session_username}`)
       .then((response) => {
         return response.json()
       })
@@ -69,7 +70,7 @@ function ChatPage() {
 
   function addChatHandler(chatData) {
     let session_username = sessionStorage.getItem('session_username')
-    fetch(`http://localhost:8080/chats/new/${session_username}`, {
+    fetch(`${URL}/chats/new/${session_username}`, {
       method: 'POST',
       body: JSON.stringify(chatData),
       headers: {

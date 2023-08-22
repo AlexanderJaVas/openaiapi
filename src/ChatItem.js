@@ -1,9 +1,10 @@
 import classes from './ChatItem.module.css'
+import URL from './backend_server_url'
 
 function ChatItem(props) {
   function deleteSubmitHandler() {
     const chatIdToDelete = props.chatId
-    fetch(`http://127.0.0.1:8080/chats/delete/${chatIdToDelete}`)
+    fetch(`${URL}/chats/delete/${chatIdToDelete}`)
   }
 
   return (

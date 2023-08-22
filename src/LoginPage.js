@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './LoginPage.module.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import URL from './backend_server_url'
 
 function LoginPage() {
   const [userData, setUserdata] = useState({ username: '', password: '' })
@@ -9,7 +10,7 @@ function LoginPage() {
 
   async function submitLoginHandler(event) {
     event.preventDefault()
-    const response = await fetch(`http://localhost:8080/authentication`, {
+    const response = await fetch(`${URL}/authentication`, {
       method: 'POST',
       body: JSON.stringify(userData),
       headers: {

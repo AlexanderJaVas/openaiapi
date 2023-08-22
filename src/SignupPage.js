@@ -2,6 +2,7 @@ import React from 'react'
 import classes from './SignupPage.module.css'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import URL from './backend_server_url'
 
 function SignupPage() {
   const [signupUserData, setsignupUserData] = useState({
@@ -12,7 +13,7 @@ function SignupPage() {
 
   async function submitSignupHandler(event) {
     event.preventDefault()
-    const response = await fetch(`http://localhost:8080/registration`, {
+    const response = await fetch(`${URL}/registration`, {
       method: 'POST',
       body: JSON.stringify(signupUserData),
       headers: {
