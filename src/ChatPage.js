@@ -40,7 +40,7 @@ function ChatPage() {
   }, [trigger])
   if (isLoading) {
     return (
-      <section className={classes.section}>
+      <section className={classes.chat}>
         <p>Loading...</p>
       </section>
     )
