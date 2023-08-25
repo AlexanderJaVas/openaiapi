@@ -54,7 +54,6 @@ function SignupPage() {
             autoComplete="off"
             required
             placeholder="  Password"
-            value={signupUserData.signupPassword}
             onChange={(event) =>
               inputChangeHandler(event.target.value, 'signupPassword')
             }
