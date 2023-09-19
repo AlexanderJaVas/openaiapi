@@ -48,7 +48,7 @@ function ChatPage() {
   return (
     <>
       <header className={classes.header}>
-        <div className={classes.title}>Lowfound OpenAI API Chat</div>
+        <div className={classes.title}>OpenAI API Chat</div>
         <nav>
           <ul>
             <Link to="/">Logout</Link>
