@@ -12,7 +12,7 @@ const Home = () => {
       <header className={classes.header}>
         <div className={classes.title}>OpenAI API Chat</div>
       </header>
-      <img src="/pic.png" alt="logo" />
+      <img src="/pic2.jpg" alt="logo" />
       <div>
         <LoginPage />
         <div className={classes.textbtw}>
