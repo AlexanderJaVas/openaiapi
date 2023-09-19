@@ -6,7 +6,6 @@ This is a front end part of web application OpenAI API Chat which provides:
 It is written on ReactJS.
 
 This application is available here: https://openai-api-chat.vercel.app/
-Note, that http should be allowed for this site in your browser's security settings.
 
 HOW TO USE
 
