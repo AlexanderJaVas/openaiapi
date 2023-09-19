@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <header className={classes.header}>
-        <div className={classes.title}>Lowfound OpenAI API Chat</div>
+        <div className={classes.title}>OpenAI API Chat</div>
       </header>
       <img src="/pic.png" alt="logo" />
       <div>
