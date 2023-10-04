@@ -1,7 +1,11 @@
 ABOUT
 
 This is a front end part of web application OpenAI API Chat which provides:
-- interface for working with OpenAI API
+- signup and signin for users
+- get chat history
+- send new message to OpenAI API
+- delete message from history
+- each user's chat history is separeted
 
 This is ReactJS based application.
 
