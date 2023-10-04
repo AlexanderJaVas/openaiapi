@@ -3,7 +3,7 @@ ABOUT
 This is a front end part of web application OpenAI API Chat which provides:
 - interface for working with OpenAI API
 
-It is written on ReactJS.
+This is ReactJS based application.
 
 This application is available here: https://openai-api-chat.vercel.app/
 
