@@ -1,3 +1,3 @@
-const URL = 'https://194.87.46.78'
+const URL = 'https://staring-blindly-into.space'
 
 export default URL
